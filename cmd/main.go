@@ -1,7 +1,7 @@
 package main
 
 import (
-	bigxxby "bigxxby/funcs"
+	bigxxby "bigxxby/internal"
 	"fmt"
 	"net/http"
 )
@@ -10,7 +10,7 @@ import (
 
 func main() {
 	mux := http.NewServeMux()
-	// mux.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static/"))))
+
 	mux.HandleFunc("/", bigxxby.MainHandler)
 	mux.HandleFunc("/static/", bigxxby.StaticHandler)
 	mux.HandleFunc("/artists/", bigxxby.ArtistIdHandler)

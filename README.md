@@ -23,7 +23,7 @@ Groupie Trackers consists on receiving a given API and manipulate the data conta
 
 ### Instructions
   - To run project: 
-  - go run ./cmd/web/
+  - go run ./cmd
 ### Made by
   - dumitkal
   - Bigxxby
