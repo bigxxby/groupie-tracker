@@ -16,5 +16,5 @@ func main() {
 	mux.HandleFunc("/artists/", bigxxby.ArtistIdHandler)
 
 	fmt.Println("Listening and serving on http://localhost:8080")
-	http.ListenAndServe(":8080", mux)
+	http.ListenAndServe(":3000", mux)
 }
