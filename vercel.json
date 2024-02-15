@@ -1,5 +1,10 @@
 {
-    "routes":[
-        {"src":"/(.*)","dest":"/api"}
+    "trailingSlash":false,
+    "rewrites":
+    [
+        {
+            "source":"/cmd(.*)",
+            "destination":"/cmd/main.go"
+        }
     ]
 }
