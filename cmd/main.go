@@ -6,8 +6,6 @@ import (
 	"net/http"
 )
 
-// https://www.codementor.io/@hau12a1/golang-http-serve-static-files-correctly-m55u3vz1a
-
 func main() {
 	mux := http.NewServeMux()
 
